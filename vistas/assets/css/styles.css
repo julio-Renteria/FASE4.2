@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,300&display=swap");
+/*Main colors*/
+:root {
+    --primary-color: #00a896;
+    --secondary-color: #f3f1ed;
+    --tertiary-color: #31363f;
+    --quaternary-color: #256386;
+    --white-color: #ffff;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+header {
+    background-color: var(--white-color);
+    padding: 0.5vw 4vw 0vw;
+    min-height: 9vh;
+}
+
+.logo {
+    max-width: 28vw;
+}
+body {
+    height: 91vh;
+}
+.table thead th {
+    vertical-align: inherit;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.container_login_page {
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
+
+    min-height: calc(100vh - 17vh);
+}
+.div_video_login_page {
+    max-width: 20vw;
+    max-height: 20vw;
+}
+
+.video_login_page {
+    position: fixed;
+    left: 0%;
+    max-width: 114%;
+    max-height: 98%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-color: rgba(var(--rgb-black), 0.5);
+}
+
+.div_form_login_page {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    min-width: 28%;
+    border-radius: 5px;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+input {
+    width: 80%;
+    height: 2.7vw;
+    margin: 1vw auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border: 1px solid #afa8a8;
+    padding: 0vw 1vw;
+}
+
+label {
+    font-weight: bold;
+    margin: 1vw 3.3vw 0vw;
+    color: var(--tertiary-color);
+    font-size: 14px;
+}
+
+.btn_login_page {
+    background-color: var(--primary-color);
+    padding: 0.5vw 0vw;
+    font-size: 17px;
+    width: 50%;
+    font-weight: 500;
+    color: var(--white-color);
+    margin: 3vw auto;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border: 1px solid #afa8a8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form_login_page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+
+.fa-circle-user {
+    color: var(--primary-color);
+    font-size: 7.5vw;
+    text-align: center;
+    margin: 1.5vw 0vw 1vw;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--tertiary-color);
+    margin-bottom: 1vw;
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.66vw 1vw;
+    color: var(--white-color);
+    align-items: center;
+    min-height: 8vh;
+}
+.contact_footer_login_page {
+    margin: 0vw 2vw;
+}
+
+footer > p {
+    font-size: 18px;
+    margin-left: 3vw;
+    font-weight: 500;
+}
+
+.fa-brands {
+    font-size: 2vw;
+    margin: 0vw 0.5vw;
+}
+
+body.swal2-height-auto {
+    height: 91vh;
+}
+
+/*------------------Tablet Desing------------------*/
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .container_login_page {
+        justify-content: center;
+    }
+    .video_login_page {
+        max-width: 205%;
+        max-height: 162%;
+    }
+    .div_form_login_page {
+        min-width: 53%;
+        justify-content: center;
+    }
+    .fa-circle-user {
+        font-size: 20.5vw;
+        margin: 1.5vw 0vw 6vw;
+    }
+    h1 {
+        font-size: 31px;
+        margin-bottom: 1vw;
+    }
+    label {
+        margin: 6vw 4.3vw 1vw;
+        font-size: 22px;
+    }
+    input {
+        height: 6.7vw;
+        padding: 0vw 2vw;
+    }
+    ::placeholder {
+        font-size: 17px;
+    }
+    .logo {
+        max-width: 85vw;
+        margin-top: 1vw;
+    }
+    .btn_login_page {
+        font-size: 22px;
+        width: 56%;
+        margin: 10vw auto;
+    }
+    footer > p {
+        font-size: 22px;
+    }
+    .fa-brands {
+        font-size: 4vw;
+    }
+}
+
+/*-------------------Movile Design-----------------------*/
+
+@media (max-width: 599px) {
+    .div_video_login_page {
+        display: none;
+    }
+    header {
+        padding: 4.5vw 4vw 2vw;
+    }
+    .logo {
+        max-width: 130vw;
+    }
+    .fa-circle-user {
+        color: var(--primary-color);
+        font-size: 26.5vw;
+        margin: 8.5vw 0vw 1vw;
+    }
+    h1 {
+        font-size: 23px;
+        margin-bottom: 1vw;
+        margin-top: 5vw;
+    }
+    .form_login_page {
+        flex-direction: column;
+        margin-top: 1vw;
+    }
+    .container_login_page {
+        flex-direction: column-reverse;
+        min-height: calc(100vh - 34vh);
+        justify-content: center;
+    }
+    label {
+        margin: 8vw 7.3vw 3vw;
+        font-size: 16px;
+    }
+    input {
+        height: 11.7vw;
+        padding: 0vw 4vw;
+    }
+    .btn_login_page {
+        width: 50%;
+        margin: 11vw auto 17vw;
+    }
+    footer > p {
+        font-size: 14px;
+    }
+    .fa-brands {
+        font-size: 4vw;
+    }
+    .div_form_login_page {
+        height: calc(100vh - 18vh);
+        display: flex;
+        justify-content: center;
+    }
+}
