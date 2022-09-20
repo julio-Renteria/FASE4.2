@@ -44,31 +44,24 @@ $nombre = $_GET["nb"];
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-search"></i>Faltas</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-th"></i><a href="../modulos/faltas.php?id=<?php echo $id ?> &nb=<?php echo $nombre ?>">Consultar Faltas</a></li> <!-- ENVIAR DATOS POR URL -->
-                        <li><i class="menu-icon fa fa-th"></i><a href="#">Exportar Faltas</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="../modulos/reportes/export_faltas.php">Exportar Faltas</a></li>
                     </ul>
                 </li>
 
                 <!--<li class="menu-title">Icons</li> <!/.CLASE DE TITULO EN MENU -->
 
                 <!--menu de Horarios-->
+
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-calendar"></i>Horarios</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-calendar"></i><a href="../modulos/horarios.php?id=<?php echo $id ?> &nb=<?php echo $nombre ?>">Consultar Horarios</a></li>
-                        <li><i class="menu-icon fa fa-calendar"></i><a href="#">Agendar Horario</a></li>
+                        <li><i class="menu-icon fa fa-calendar"></i><a href="../modulos/con_horario.php?id=<?php echo $id ?> &nb=<?php echo $nombre ?>">Consultar Horarios</a></li>
+                        <li><i class="menu-icon fa fa-calendar"></i><a href="../modulos/horarios.php?id=<?php echo $id ?> &nb=<?php echo $nombre ?>">Agendar Horario</a></li>
+                        <li><i class="menu-icon fa fa-calendar"></i><a href="../modulos/reportes/export_horarios.php?php echo $id ?> &nb=<?php echo $nombre ?>">Exportar Horario & Eventos</a></li>
                     </ul>
                 </li>
 
 
-                <!-- MENU PARA PRUEBAS JULIO RENTERIA  -->
-
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-edit"></i>Julio R.</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-edit"></i><a href="../../../FASE 3/modulos/faltas.php">Pruebas</a></li>
-                        <li><i class="menu-icon fa fa-edit"></i><a href="#">Submenu vacio</a></li>
-                    </ul>
-                </li> <!-- AQUI TERMINA MENU PRUEBAS JULIO -->
 
 
         </div>

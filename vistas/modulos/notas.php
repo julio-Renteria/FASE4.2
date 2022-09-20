@@ -70,7 +70,7 @@ require('../templete/navegation.php');
                 <td> <?php echo '# ' . $row['id_area'] ?> </td>
                 <td class="avatar">
                     <div class="round-img">
-                        <a href="#"><img class="rounded-circle" src="../assets/images/avatar/imagen_profesor.jpg" alt=""></a>
+                        <a href="#"><img class="rounded-circle" src="../images/avatar/imagen_profesor.jpg" alt=""></a>
                     </div>
 
                 </td>

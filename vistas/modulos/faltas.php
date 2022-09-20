@@ -69,13 +69,7 @@ if ($num_rows == 0) {
         <p class="mb-0">Recuerda que en el futuro esta en la educaciòn.</p>
         </div>
         </div> 
-
-        
-
-
     ';
-
-
 
     die();
 } else {
@@ -90,67 +84,34 @@ if ($num_rows == 0) {
         $area_asignatura = ($row[33]);
     }
 }
-
-
-
-
-
-
-
-
-
-
 ?>
 
-
-
-
 <body>
-
-
-
-
-    <div class="container_table_tasks">
-        <h1>Consultar Faltas</h1>
-
-        <table>
+    <table class="table ">
+        <thead>
             <tr>
-                <th>Id Alumno</th>
-                <td><?php echo $id_alumno ?></td>
-                <th>Periodo Falta</th>
-                <td><?php echo $periodo_falta ?></td>
+                <th class="serial cabecera">ID ALUMNO</th>
+                <th class="avatar">PERIODO DE FALTA</th>
+                <th>NOMBRE ACUDIENTE</th>
+                <th>CANTIDAD FALTAS</th>
+                <th>NOMBRE ALUMNO</th>
+                <th>ASIGNATURA</th>
+                <th>AREA</th>
             </tr>
-            <tr>
-                <th>Nombres Acudiente</th>
-                <td><?php echo strtoupper($nombre) . " " . $apellido ?></td>
-                <th>Cantidad Faltas</th>
-                <td><?php echo $cantidad_falta ?></td>
-            </tr>
+        </thead>
+        <tbody>
 
-            <tr>
-                <th>Nombres Alumno</th>
-                <td><?php echo $nombre_alumno . " " . $apellido_alumno ?></td>
-                <th>Asignatura</th>
-                <td><?php echo $nombre_asignatura ?></td>
-            </tr>
-            <tr>
-                <th>Id falta</td>
-                <td><?php echo $id_falta ?></td>
-                <th>Area</th>
-                <td><?php echo $area_asignatura ?></td>
-            </tr>
-        </table>
-    </div>
-</body>
+            <div class="container_table_tasks">
+                <?php echo "  <h1 > Faltas del alumno ";  ?></h1>
 
-</html>
+                <tr>
 
-
-
-
-
-<!-- 
-<
-
-
-/* require('../templete/footer.php'); */
+                    </td>
+                    <td> <?php echo $id_alumno ?></td>
+                    <td> <span class="name"><?php echo $periodo_falta ?></span> </td>
+                    <td> <span class="materia"><?php echo strtoupper($nombre) . " " . $apellido ?></span> </td>
+                    <td><span class="name"><?php echo $cantidad_falta ?></span></td>
+                    <td><span class="name"><?php echo $nombre_alumno . " " . $apellido_alumno ?></span></td>
+                    <td><span class="name"><?php echo $nombre_asignatura ?></span></td>
+                    <td><span class="name"><?php echo $area_asignatura ?></span></td>
+                </tr>

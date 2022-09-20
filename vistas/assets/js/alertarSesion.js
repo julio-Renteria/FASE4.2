@@ -12,7 +12,7 @@ window.onload = function () {
             confirmButtonText: 'Si, estoy seguro'
         }).then((result) => {
             if (result.isConfirmed) {
-                setTimeout(function () { window.location.href = "../../../../FASE4.1/index.php"; }, 5);
+                setTimeout(function () { window.location.href = "../../../FASE4.2"; }, 5);
             }
         })
     })
